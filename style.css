@@ -18,10 +18,16 @@
   }
   
   h1 {
+    text-align: center;
     font-weight: bold;
     color: #000;
   }
   
+  h2 {
+    text-align: center;
+    text-decoration: underline;
+  }
+
   .bold {
     font-weight: bold;
   }
@@ -44,15 +50,21 @@
     float:left;
     margin:5px;
   }
-  
+
   .pet-image {
     height:250px;
   }
   
   .dashboard div {
     display:block;
+    
   }
-  
+  main {
+    display: flex;
+    flex-direction: column; /* Stack the sections vertically */
+    align-items: center; /* Center horizontally */
+  }
+
   .pet-image-container {
     float:left;
     padding:10px;
@@ -69,14 +81,25 @@
   
   .button-container button {
     width: 100px;
-      margin-right: 10px;
-      text-align: center;
-      display: inline-block;
-      float: left;
+    margin-right: 10px;
+    text-align: center;
+    display: inline-block;
+    float: left;
     font-size:15px;
     background-color: #1e2835;
     border-color: #404853;
     cursor:pointer;
     background-image: linear-gradient(to bottom,rgba(246,246,246,.1)0%,rgba(30,40,53,0)66%);
     color: #fafafa;
+  }
+  
+  /* Used this to move the tuna cat close to the pet */
+  #treat-image {
+    position: absolute;
+    top: 300px; /* Adjust this value to move the treat image closer vertically */
+    left: 475px; /* Adjust this value to move the treat image closer horizontally */
+  }
+  
+  .hidden-treat {
+    display: none;
   }
