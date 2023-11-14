@@ -1,105 +1,109 @@
 
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: helvetica, arial, sans-serif;
-    margin: 25px;
-  }
-  
-  main {
-    display:block;
-    height:175px;
-  }
-  
-  header {
-    border-bottom: 1px solid black;
-  }
-  
-  h1 {
-    text-align: center;
-    font-weight: bold;
-    color: #000;
-  }
-  
-  h2 {
-    text-align: center;
-    text-decoration: underline;
-  }
+  box-sizing: border-box;
+}
 
-  .bold {
-    font-weight: bold;
-  }
-  
-  p {
-    max-width: 600px;
-  }
-  
-  
-  li {
-    margin-bottom: 5px;
-  }
-  
-  footer {
-    padding-top: 25px;
-    border-top: 1px solid black;
-  }
-  
-  footer a {
-    float:left;
-    margin:5px;
-  }
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 25px;
+}
 
-  .pet-image {
-    height:250px;
-  }
-  
-  .dashboard div {
-    display:block;
-    
-  }
-  main {
-    display: flex;
-    flex-direction: column; /* Stack the sections vertically */
-    align-items: center; /* Center horizontally */
-  }
 
-  .pet-image-container {
-    float:left;
-    padding:10px;
-  }
+
+header {
+  border-bottom: 1px solid black;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  color: #000000;
+}
+
+h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+p {
+  max-width: 600px;
+}
+
+
+li {
+  margin-bottom: 5px;
+}
+
+footer {
+  padding-top: 25px;
+  border-top: 1px solid black;
+}
+
+footer a {
+  float:left;
+  margin:5px;
+}
+
+.pet-image {
+  height:250px;
+}
+
+.dashboard div {
+  display:block;
   
-  .dashboard {
-    float:left;
-    padding:20px;
-  }
-  
-  .button-container {
-    margin-top:20px;
-  }
-  
-  .button-container button {
-    width: 100px;
-    margin-right: 10px;
-    text-align: center;
-    display: inline-block;
-    float: left;
-    font-size:15px;
-    background-color: #1e2835;
-    border-color: #404853;
-    cursor:pointer;
-    background-image: linear-gradient(to bottom,rgba(246,246,246,.1)0%,rgba(30,40,53,0)66%);
-    color: #fafafa;
-  }
-  
-  /* Used this to move the tuna cat close to the pet */
-  #treat-image {
-    position: absolute;
-    top: 300px; /* Adjust this value to move the treat image closer vertically */
-    left: 475px; /* Adjust this value to move the treat image closer horizontally */
-  }
-  
-  .hidden-treat {
-    display: none;
-  }
+}
+main {
+  display: flex;
+  flex-direction: column; /* Stack the sections vertically */
+  align-items: center; /* Center horizontally */
+}
+
+.pet-image-container {
+  padding:10px;
+  position: relative;
+}
+
+.dashboard {
+  float:left;
+  padding:20px;
+}
+
+.button-container {
+  margin-top:20px;
+}
+
+.button-container button {
+  width: 100px;
+  margin-right: 10px;
+  text-align: center;
+  display: inline-block;
+  float: left;
+  font-size:15px;
+  background-color: #1e2835;
+  border-color: #404853;
+  cursor:pointer;
+  background-image: linear-gradient(to bottom,rgba(246,246,246,.1)0%,rgba(30,40,53,0)66%);
+  color: #fafafa;
+}
+
+/* Used this to move the tuna cat close to the pet */
+#treat-image {
+  position: absolute;
+  top: 260px; /* Adjust this value to move the treat image closer vertically */
+  left: 15px; /* Adjust this value to move the treat image closer horizontally */
+}
+
+/* Need to move the play image */
+#play-image {
+  position: absolute;
+  top: -50px; /* Adjust this value to move the treat image closer vertically */
+  left: -105px; /* Adjust this value to move the treat image closer horizontally */
+}
+
+.hidden-treat {
+  display: none;
+}
